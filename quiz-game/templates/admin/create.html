@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Create Quiz</title></head>
+<body>
+  <h1>Generate Quiz </h1>
+  <form th:action="@{/admin/generate}" method="post">
+    <div><label>Topic Title: <input name="title" /></label></div>
+    <div><label>Topic Details: <textarea name="details"></textarea></label></div>
+    <button type="submit">Generate</button>
+  </form>
+  <p><a th:href="@{/admin/quizzes}">Back</a></p>
+</body>
+</html>

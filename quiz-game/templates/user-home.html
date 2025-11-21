@@ -1,0 +1,12 @@
+<html>
+<body>
+<h2>Available Quizzes</h2>
+
+<ul>
+<li th:each="q : ${quizzes}">
+    <a th:href="@{'/quiz/' + ${q.id}}">[[${q.topic}]]</a>
+</li>
+</ul>
+
+</body>
+</html>

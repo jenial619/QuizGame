@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Admin Dashboard</h2>
+
+<form method="post" th:action="@{/admin/generate}">
+    Topic: <input name="topic"><br>
+    Details: <textarea name="details"></textarea><br>
+    <button type="submit">Generate Quiz</button>
+</form>
+
+</body>
+</html>
